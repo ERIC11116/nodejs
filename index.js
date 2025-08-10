@@ -2,7 +2,8 @@ const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const TOKEN = process.env.BOT_TOKEN; // ناخذ التوكن من متغير بيئة
+const TOKEN = process.env.BOT_TOKEN;
+client.login(TOKEN);
 
 const client = new Client({
   intents: [
